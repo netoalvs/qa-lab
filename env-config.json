@@ -1,0 +1,8 @@
+{
+  "SAUCEDEMO_USER": "standard_user",
+  "SAUCEDEMO_PASSWORD": "secret_sauce",
+  "DB_HOST": "localhost",
+  "DB_USER": "root",
+  "DB_PASSWORD": "root",
+  "DB_NAME": "test_db"
+}
