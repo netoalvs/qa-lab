@@ -11,3 +11,21 @@ Cypress.Commands.add('clearCart', () => {
   });
   cy.get('.shopping_cart_link').click();
 });
+
+Cypress.Commands.add('loginAPI', (email, password) => {
+  cy.request({
+    method: 'POST',
+    url: 'https://reqres.in/api/login',
+    body: {
+      email,
+      password,
+    },
+  });
+});
+
+Cypress.Commands.add('getUser', (userId) => {
+  cy.request({
+    method: 'GET',
+    url: `https://reqres.in/api/users/${userId}`,
+  });
+});
