@@ -1,9 +1,12 @@
 const { defineConfig } = require('cypress');
+const mysql = require('mysql2/promise');
 
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://www.saucedemo.com',
     env: {
+      SAUCEDEMO_USER: 'standard_user',
+      SAUCEDEMO_PASSWORD: 'secret_sauce',
       DB_HOST: 'localhost',
       DB_USER: 'root',
       DB_PASSWORD: 'root',
@@ -11,13 +14,16 @@ module.exports = defineConfig({
     },
     setupNodeEvents(on, config) {
       on('task', {
-        queryDb(query) {
-          return require('mysql2').createConnection({
+        async queryDb(query) {
+          const connection = await mysql.createConnection({
             host: config.env.DB_HOST,
             user: config.env.DB_USER,
             password: config.env.DB_PASSWORD,
             database: config.env.DB_NAME,
-          }).query(query);
+          });
+          const [results] = await connection.execute(query);
+          await connection.end();
+          return results;
         },
       });
     },

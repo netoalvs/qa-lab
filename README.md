@@ -5,7 +5,7 @@
 ![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)
 ![License](https://img.shields.io/badge/license-Private-red)
 
-Welcome to my **Automation Showcase**! This project is a collection of automated tests that demonstrate my skills in QA automation using **Cypress**. It covers a wide range of scenarios, including **UI testing**, **API testing**, and **database testing**, using real-world sites like [Saucedemo](https://www.saucedemo.com), [The Internet](https://the-internet.herokuapp.com), [ReqRes](https://reqres.in/), and [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+Welcome to my **Automation Showcase**! This project is a collection of automated tests that demonstrate my skills in QA automation using **Cypress**. It covers a wide range of scenarios, including **UI testing**, **API testing**, and **database testing**, using real-world sites like [Saucedemo](https://www.saucedemo.com), [The Internet](https://the-internet.herokuapp.com), [ReqRes](https://reqres.in/), [Wikipedia](https://wikipedia.com.br), [iFrame Tester](https://iframetester.com/) and [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
 ---
 

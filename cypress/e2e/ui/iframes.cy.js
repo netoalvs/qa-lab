@@ -1,10 +1,14 @@
-describe('Iframe Tests', () => {
-    it('Should interact with an iframe', () => {
-      cy.visit('https://the-internet.herokuapp.com/iframe');
-      cy.get('#mce_0_ifr').then(($iframe) => {
-        const $body = $iframe.contents().find('body');
-        cy.wrap($body).type('Text inside iframe');
-        cy.wrap($body).should('contain', 'Text inside iframe');
-      });
-    });
+describe('Iframe Tester Site', () => {
+  beforeEach(() => {
+    cy.visit('https://iframetester.com/');
   });
+
+  it('Should enter a URL and render it in an iframe', () => {
+    cy.get('#url-search').type('https://example.com');
+    cy.get('button').click();
+
+    cy.get('iframe')
+      .should('exist')
+      .and('be.visible');
+  });
+});
