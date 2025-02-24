@@ -97,7 +97,7 @@ npx cypress run --spec "cypress/e2e/database/query-db.cy.js"
   _Expected Result_: Additional information should appear when hovering over elements.
 
 - **Iframes Test (iframes.cy.js)**  
-  _Description_: Tests interaction with iframes on The Internet.  
+  _Description_: Tests interaction with iframes on iFrame Tester.  
   _Expected Result_: Text should be typed into the iframe input field successfully.
 
 - **Download Test (download.cy.js)**  
@@ -109,7 +109,7 @@ npx cypress run --spec "cypress/e2e/database/query-db.cy.js"
   _Expected Result_: The file should be uploaded successfully.
 
 - **Search Test (search.cy.js)**  
-  _Description_: Tests search functionality on The Internet.  
+  _Description_: Tests search functionality on Wikipedia.  
   _Expected Result_: The search results should match the query.
 
 ### API Tests

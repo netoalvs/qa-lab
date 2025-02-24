@@ -4,8 +4,8 @@ import InventoryPage from './pages/InventoryPage';
 describe('UI Tests with Page Object Model', () => {
   it('Should log in with valid credentials', () => {
     LoginPage.visit();
-    LoginPage.fillUsername(Cypress.env('SAUCEDEMO_USER')); // Using env variable
-    LoginPage.fillPassword(Cypress.env('SAUCEDEMO_PASSWORD')); // Using env variable
+    LoginPage.fillUsername(Cypress.env('SAUCEDEMO_USER'));
+    LoginPage.fillPassword(Cypress.env('SAUCEDEMO_PASSWORD'));
     LoginPage.submit();
     cy.url().should('include', '/inventory.html');
   });
