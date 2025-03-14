@@ -7,6 +7,8 @@ module.exports = defineConfig({
     env: {
       SAUCEDEMO_USER: 'standard_user',
       SAUCEDEMO_PASSWORD: 'secret_sauce',
+      API_EMAIL: 'eve.holt@reqres.in',
+      API_PASSWORD: 'cityslicka',
       DB_HOST: 'localhost',
       DB_USER: 'root',
       DB_PASSWORD: 'root',
